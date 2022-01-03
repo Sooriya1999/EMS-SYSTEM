@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
-  constructor() { }
-
+  constructor(private http:HttpClientModule) { }
+  username='';
+  password='';
+  poster(){
+   alert(this.username)
+  }
   ngOnInit(): void {
   }
 
