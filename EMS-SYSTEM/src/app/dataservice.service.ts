@@ -1,14 +1,18 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpHeaders,HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataserviceService {
-   private _url:string ="/assets/data/empdata.json";
-  constructor( private http:HttpClientModule) { }
+
+   private _url:string ="/assets/empdata.json";
+  getdata: any;
+
+  constructor( private httpClient:HttpClient) { }
+
   employeedata(){
-    return this._url;
+    this.httpClient.get('http://localhost:3000/data');
   }
 }
 
