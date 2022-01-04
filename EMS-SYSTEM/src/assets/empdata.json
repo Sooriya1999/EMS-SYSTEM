@@ -1,14 +1,29 @@
 {
-  "posts": [
+  "data": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "RAGAVENDRAN",
+      "purpose": "FRONT-END DEVELOPER"
     },
     {
       "id": 2,
-      "title": "json-server2",
-      "author": "typicode2"
+      "name": "ANGULAR",
+      "purpose": "ANGULAR.IO"
+    },
+    {
+      "id": 3,
+      "name": "TEDDY",
+      "purpose": "PROGRAMMER"
+    },
+    {
+      "id": 4,
+      "name": "HTTP",
+      "purpose": "SERVER COMMUNICATION"
+    },
+    {
+      "id": 5,
+      "name": "HTML",
+      "purpose": "MARKUP LANGUAGE"
     }
   ],
   "comments": [
