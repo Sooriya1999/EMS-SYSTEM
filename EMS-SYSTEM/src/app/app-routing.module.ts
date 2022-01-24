@@ -8,14 +8,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {path:"login", component:LoginComponent},
-  {path:"home", component:HomeComponent},
+  {path:'**',component:HomeComponent},
+  {path:"login", component:LoginComponent
+children :[
   {path:'signup',component:SignupComponent},
+]},
+  {path:"home", component:HomeComponent},
   {path:'datas',component:DatasComponent},
   {path:'attendence',component:AttendenceComponent},
   {path:'contact',component:ContactComponent},
-  {path:'',redirectTo:'/home',pathMatch:'full'},
-  {path:'**',component:HomeComponent}
+  {path:'',redirectTo:'/home',pathMatch:'full'}
 ];
 
 @NgModule({
